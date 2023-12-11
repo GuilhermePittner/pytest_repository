@@ -32,7 +32,7 @@ class Funcionario():
         valor = self._salario * 0.1
         
         if valor > 1000:
-            valor = 0
+            raise Exception('Salário alto demais para ser bonificado.')
         
         return valor
     
